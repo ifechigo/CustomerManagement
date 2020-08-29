@@ -1,0 +1,118 @@
+/* main wrapper */
+body{
+    background-color: rgb(224, 229, 243);
+    margin: 0px;
+    font-family: sans-serif;
+}
+h2{
+    font-weight: 800;
+}
+.main{
+    display: flex;
+    margin: 3px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 75%;
+}
+
+/* content style */
+.content{
+    margin: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 60%;
+}
+.main-para h1{
+    padding-top: 10px;
+    font-weight: 800;
+}
+ul{
+    display: grid;
+    margin-left: 10px;
+}
+.para-1 img{
+    height: 300px;
+    width: 350px;
+    float: right;
+    padding: 10px;
+}
+.image-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* grid-template-columns: 1fr 1fr; */
+}
+.image-grid img{
+    height: 300px;
+    width: 500px;
+    margin: 5px;
+}
+.image-grid img:hover{
+    transform: scale(1.06);
+
+}
+
+/* sidebar style */
+.sidebar{
+    flex-basis: 25%;
+    display: flex;
+    margin: 2px;
+    flex-direction: column;
+    background-color: rgb(255, 204, 110);
+}
+.sidebar div{
+    margin: 3px;
+    border: solid rgb(255, 177, 33);
+    padding: 5px;
+}
+.sidebar > div > h2{
+    font-weight: 800;
+}
+.sidebar > div > p{
+    font-size: 0.5em;
+    font-weight: lighter;
+}
+.sidebar > div > a{
+    text-transform: lowercase;
+    text-decoration: none;
+    color: steelblue;
+
+}
+.sidebar > div > a:hover{
+    color: rgba(0, 183, 255, 0.699);
+    transition: color 400ms;
+}
+
+.goto-container{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+.signup a{
+    text-decoration: none;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    opacity: 0.5;
+    width: 50px;
+    height: 20px;
+    padding: 3px;
+}
+
+.login a{
+    text-decoration: none;
+    background: blue;
+    color: white;
+    opacity: 0.5;
+    border-radius: 5px;
+    width: 35px;
+    height: 20px;
+    padding: 3px;
+}
+
+.signup a:hover, .login a:hover{
+    opacity: 1;
+    background: red;
+}
+
